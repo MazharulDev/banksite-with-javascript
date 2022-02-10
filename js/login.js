@@ -7,5 +7,7 @@ document.getElementById('sub-btn').addEventListener('click',function(){
 
     if(email=="miforbd@gmail.com" && pass=="miforbd"){
         window.location.href="inside.html"
+    }else{
+        alert('Please enter valid email & password');
     }
 })
