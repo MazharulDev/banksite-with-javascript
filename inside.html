@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking site</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <h1 class="text-4xl text-center pt-5 mb-10">Your bank <span class="text-emerald-700	">Money</span></h1>
+    </header>
+    <main>
+        <div class="w-3/4 mx-auto">
+            <section>
+                <div class="grid grid-cols-3 gap-4">
+                    <div class=" bg-green-300 p-8 text-white rounded shadow-lg">
+                        <h3 class="text-2xl">Diposit</h3>
+                        <h2 class="text-4xl">$<span id="diposit-total">00</span> </h2>
+                    </div>
+                    <div class="bg-green-400 p-8 text-white rounded shadow-lg">
+                        <h3 class="text-2xl">Withdrow</h3>
+                        <h2 class="text-4xl">$00</h2>
+                    </div>
+                    <div class="bg-yellow-300 p-8 text-white rounded shadow-lg">
+                        <h3 class="text-2xl">Balance</h3>
+                        <h2 class="text-4xl">$<span id="balance-total">450</span></h2>
+                    </div>
+                </div>
+            </section>
+    
+            <section class="mt-10">
+                
+                <div class="grid grid-cols-2 gap-4">
+                           
+                            <div class="bg-lime-300 rounded">
+                                        <div class="p-8">
+                                            <h3 class="text-4xl mb-2">Diposit</h3>
+                                        <input id="diposit-input" class="block border pl-3 p-1 rounded border-stone-400" type="text" name="" id="" placeholder="$ type your amount">
+                                <button id="diposit-btn" class="bg-emerald-400 px-5 py-2 rounded block mt-3 text-white">Diposit</button>
+                                        </div>
+                            </div>
+
+                            <div class="bg-green-300 rounded">
+                                        <div class="p-8">
+                                            <h3 class="text-4xl mb-2">Withdrow</h3>
+                                        <input id="pass-field" class="block border pl-3 p-1 rounded border-stone-400" type="text" name="" id="" placeholder="$ type your amount">
+                                <button id="withdrow-btn" class="bg-emerald-400 px-5 py-2 rounded block mt-3 text-white">Withdrow</button>
+                                        </div>
+                            </div>
+                           
+                           
+                           
+                    
+                </div>
+                    
+                
+            </section>
+        </div>
+    </main>
+
+    <script src="js/banking.js"></script>
+</body>
+</html>
