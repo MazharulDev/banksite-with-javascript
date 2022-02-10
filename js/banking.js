@@ -34,7 +34,7 @@ document.getElementById('withdrow-btn').addEventListener('click',function(){
     const previusBalanceText=balanceTotal.innerText;
     const previusBalanceTotal=parseFloat(previusBalanceText);
 
-    const newBalanceTotal=previusBalanceTotal-newWithdrowTotal;
+    const newBalanceTotal=previusBalanceTotal-newWithdrowInput;
 
     balanceTotal.innerText=newBalanceTotal;
     
