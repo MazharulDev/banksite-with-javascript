@@ -17,3 +17,29 @@ document.getElementById('diposit-btn').addEventListener('click',function(){
     
     dipositInput.value='';
 })
+
+
+document.getElementById('withdrow-btn').addEventListener('click',function(){
+    const withdrowInput=document.getElementById('withdrow-input')
+    const withdrowInputText=withdrowInput.value;
+    const newWithdrowInput=parseFloat(withdrowInputText)
+
+    const withdrowTotalText=document.getElementById('withdrow-total');
+    const previuswithdrowText=withdrowTotalText.innerText;
+    const previuswithdrowTotal=parseFloat(previuswithdrowText);
+    const newWithdrowTotal=previuswithdrowTotal+newWithdrowInput;
+    withdrowTotalText.innerText=newWithdrowTotal;
+
+    const balanceTotal=document.getElementById('balance-total');
+    const previusBalanceText=balanceTotal.innerText;
+    const previusBalanceTotal=parseFloat(previusBalanceText);
+
+    const newBalanceTotal=previusBalanceTotal-newWithdrowTotal;
+
+    balanceTotal.innerText=newBalanceTotal;
+    
+    
+   
+
+    withdrowInput.value='';
+})
