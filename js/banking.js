@@ -10,7 +10,8 @@ document.getElementById('diposit-btn').addEventListener('click',function(){
     const balanceTotal=document.getElementById('balance-total');
     const balanceTotalText=balanceTotal.innerText;
     const previusbalance=parseFloat(balanceTotalText);
-    
+    const newBalanceTotal= previusbalance+parseFloat(dipositAmount);
+    balanceTotal.innerText=newBalanceTotal;
 
     dipositTotal.innerText=totalDiposit;
     
